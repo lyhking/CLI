@@ -52,7 +52,7 @@ fs.readdir(process.cwd(), function(err, files) {
 			stdin.pause();
 			// console.log(stats);
 			if (stats[Number(data)].isDirectory()) {
-				fs.fs.readdir(__dirname + '/' + filename, function(err, files) {
+				fs.readdir(__dirname + '/' + filename, function(err, files) {
 					console.log('');
 					console.log('   (' + files.length + ' files)');
 					files.forEach(function(file) {
