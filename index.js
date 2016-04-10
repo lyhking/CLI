@@ -13,7 +13,7 @@ fs.readdir(process.cwd(), function(err, files) {
 		return console.log('     \033[33m No files to show! \033[39m\n');
 	}
 	console.log(' Select which file or directory you want to see');
-	var stats = [];
+	var stats = []; //储存每个文件的信息
 	//遍历输出文件目录
 	function file(i) {
 		var filename = files[i];
